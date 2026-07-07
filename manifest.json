@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "淘宝以图搜同款助手",
+  "version": "0.5.12",
+  "description": "右键商品图片或在商品详情页点击按钮，打开淘宝以图搜索结果页。",
+  "permissions": [
+    "contextMenus",
+    "cookies",
+    "declarativeNetRequest",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "淘宝以图搜同款"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.jd.hk/*",
+        "https://*.jd.com/*",
+        "https://*.360buy.com/*",
+        "https://detail.tmall.com/*",
+        "https://item.taobao.com/*"
+      ],
+      "css": ["content.css"],
+      "js": ["content_jd.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://*.taobao.com/*",
+        "https://*.tmall.com/*"
+      ],
+      "css": ["content.css"],
+      "js": ["content_taobao.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

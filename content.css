@@ -1,0 +1,199 @@
+.tbis-product-button-bar {
+  position: fixed;
+  right: 18px;
+  top: 112px;
+  z-index: 2147483647;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tbis-product-search-button {
+  border: 0;
+  border-radius: 6px;
+  background: #ff5000;
+  color: #fff;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+  cursor: pointer;
+}
+
+.tbis-product-search-button-mapi {
+  background: #1677ff;
+}
+
+.tbis-product-search-button:disabled {
+  cursor: default;
+  opacity: .72;
+}
+
+.tbis-jd-toast {
+  position: fixed;
+  right: 18px;
+  top: 160px;
+  z-index: 2147483647;
+  max-width: 260px;
+  background: rgba(20, 20, 20, .9);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.45;
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif;
+}
+
+.tbis-mapi-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2147483647;
+  width: min(1040px, 96vw);
+  height: 100vh;
+  box-sizing: border-box;
+  background: #303030;
+  color: #f4f4f4;
+  border-left: 1px solid rgba(255, 122, 26, .35);
+  box-shadow: -12px 0 32px rgba(0, 0, 0, .35);
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif;
+  transform: translateX(104%);
+  transition: transform .18s ease;
+}
+
+.tbis-mapi-sidebar-open {
+  transform: translateX(0);
+}
+
+.tbis-mapi-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.tbis-mapi-sidebar-title {
+  color: #ff7a1a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.tbis-mapi-sidebar-summary {
+  margin-top: 4px;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.tbis-mapi-sidebar-close {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .14);
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.tbis-mapi-sidebar-body {
+  height: calc(100vh - 116px);
+  overflow: auto;
+  padding: 18px 26px 24px;
+  box-sizing: border-box;
+}
+
+.tbis-mapi-sidebar-sort {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 11px 28px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.tbis-mapi-sort-button {
+  border: 0;
+  background: transparent;
+  color: #d7d7d7;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.tbis-mapi-sort-active {
+  color: #ff7a1a;
+}
+
+.tbis-mapi-sort-arrows {
+  margin-left: 3px;
+  color: #8e8e8e;
+  font-size: 10px;
+}
+
+.tbis-mapi-sidebar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.tbis-mapi-sidebar-item {
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(255, 122, 26, .32);
+  border-radius: 6px;
+  background: #3a3a3a;
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.tbis-mapi-sidebar-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  height: auto;
+  border-radius: 0;
+  background: #202020;
+  object-fit: cover;
+}
+
+.tbis-mapi-sidebar-info {
+  min-width: 0;
+  padding: 10px 11px 12px;
+}
+
+.tbis-mapi-sidebar-name {
+  max-height: 42px;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.tbis-mapi-sidebar-price {
+  margin-top: 7px;
+  color: #ff7a1a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tbis-mapi-sidebar-meta {
+  margin-top: 5px;
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.tbis-mapi-sidebar-loading,
+.tbis-mapi-sidebar-empty,
+.tbis-mapi-sidebar-error {
+  padding: 16px 2px;
+  color: #cfcfcf;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.tbis-mapi-sidebar-error {
+  color: #ffb087;
+}

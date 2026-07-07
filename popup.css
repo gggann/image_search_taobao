@@ -1,0 +1,39 @@
+.tbis-popup {
+  width: 280px;
+  margin: 0;
+  padding: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif;
+  color: #222;
+}
+
+.tbis-popup-title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #ff5000;
+}
+
+.tbis-popup-text {
+  margin: 7px 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #666;
+}
+
+.tbis-popup-button {
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 6px;
+  background: #ff5000;
+  color: #fff;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tbis-popup-muted {
+  margin: 7px 0;
+  color: #999;
+  font-size: 11px;
+  line-height: 1.55;
+}
